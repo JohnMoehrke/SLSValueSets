@@ -2,7 +2,7 @@
 
 THIS Repository are alternative SLS ValueSets to those published by - SHIFT [SLS ValueSets](https://build.fhir.org/ig/SHIFT-Task-Force/SLS-ValueSets/).
 
-This IG CI build https://build.fhir.org/ig/johnmoehrke/SLSValueSets/
+This IG CI build https://build.fhir.org/ig/JohnMoehrke/SLSValueSets/
 
 The ValueSets and Profiles for classifying data into sensitive topics.
 
