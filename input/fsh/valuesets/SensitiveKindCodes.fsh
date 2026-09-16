@@ -13,7 +13,7 @@ Description: "Sensitivity codes that are not defined in HL7"
 // BEHAVIORAL HEALTH (BH) CODES
 //------------------------------------------------------------------------------
 Instance: ShiftMinBHCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - SHIFT SLS Behavioral Health Codes"
 Description: """
@@ -32,8 +32,7 @@ SHIFT SLS set of codes representing behavioral health conditions requiring speci
 
 Identified as: v3-ActCode#BH
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 
 * compose.inactive = true
 
@@ -100,7 +99,7 @@ Identified as: v3-ActCode#BH
 // SEXUALITY & REPRODUCTIVE HEALTH (SEX) CODES
 //------------------------------------------------------------------------------
 Instance: ShiftMinSEXCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - SHIFT SLS Sexuality and Reproductive Health Codes"
 Description: """
@@ -121,8 +120,7 @@ SHIFT SLS set of codes representing sexuality and reproductive health requiring 
 
 Identified as: v3-ActCode#SEX
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SEX
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SEX
 
 * compose.inactive = true
 
@@ -267,7 +265,7 @@ Identified as: v3-ActCode#SEX
 // ABORTION CODES
 //------------------------------------------------------------------------------
 Instance: ShiftMinAbortionCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - SHIFT SLS Abortion Codes"
 Description: """
@@ -286,8 +284,7 @@ SHIFT SLS set of codes representing abortion-related conditions, procedures, dia
 
 Identified as: ExtraSensitiveCodes#ABORTION
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = ExtraSensitiveCodes#ABORTION
+* useContext[SLS-tag][+].valueCodeableConcept = ExtraSensitiveCodes#ABORTION
 
 * compose.inactive = true
 
@@ -341,7 +338,7 @@ Identified as: ExtraSensitiveCodes#ABORTION
 // SEXUALLY TRANSMITTED DISEASE (STD) CODES
 //------------------------------------------------------------------------------
 Instance: ShiftMinSTDCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - SHIFT SLS Sexually Transmitted Disease Codes"
 Description: """
@@ -360,8 +357,7 @@ SHIFT SLS set of codes representing sexually transmitted diseases requiring spec
 
 Identified as: v3-ActCode#STD
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#STD
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#STD
 
 * compose.inactive = true
 
@@ -405,7 +401,7 @@ Identified as: v3-ActCode#STD
 // HIV CODES
 //------------------------------------------------------------------------------
 Instance: ShiftMinHIVCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - SHIFT SLS HIV Codes"
 Description: """
@@ -424,8 +420,7 @@ SHIFT SLS set of codes representing HIV-related conditions and treatments requir
 
 Identified as: v3-ActCode#HIV
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#HIV
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#HIV
 
 * compose.inactive = true
 
@@ -455,7 +450,7 @@ Identified as: v3-ActCode#HIV
 // GENETIC DISEASE INFORMATION (GDIS) CODES
 //------------------------------------------------------------------------------
 Instance: ShiftMinGDISCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - SHIFT SLS Genetic Disease Information Codes"
 Description: """
@@ -474,8 +469,7 @@ SHIFT SLS set of codes representing genetic disease information requiring specia
 
 Identified as: v3-ActCode#GDIS
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#GDIS
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#GDIS
 
 * compose.inactive = true
 
@@ -496,7 +490,7 @@ Identified as: v3-ActCode#GDIS
 // SEXUAL ASSAULT / DOMESTIC VIOLENCE (SDV) CODES
 //------------------------------------------------------------------------------
 Instance: ShiftMinSDVCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - SHIFT SLS Sexual Assault / Domestic Violence Codes"
 Description: """
@@ -515,8 +509,7 @@ SHIFT SLS set of codes representing sexual assault and domestic violence requiri
 
 Identified as: v3-ActCode#SDV
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SDV
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SDV
 
 * compose.inactive = true
 
@@ -566,7 +559,7 @@ Identified as: v3-ActCode#SDV
 // as it does not matter where these codes show up they would indicate the sensitivity kind SUD
 //------------------------------------------------------------------------------
 Instance: ShiftMinPSYTHPNCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - SHIFT SLS Psychiatric Notes Use Codes"
 Description: """
@@ -585,10 +578,8 @@ SHIFT SLS set of codes representing psychiatric notes requiring special privacy 
 
 Identified as: PSYTHPN, BH
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#PSYTHPN
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#PSYTHPN
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 
 * compose.inactive = true
 
@@ -602,7 +593,7 @@ Identified as: PSYTHPN, BH
 
 
 Instance: ShiftMinOpioidCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - SHIFT SLS Opioid Codes"
 Description: """
@@ -621,12 +612,9 @@ SHIFT SLS set of codes representing opioid abuse requiring special privacy prote
 
 Identified as: v3-ActCode#OPIOIDUD
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPIOIDUD
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#42CFRPart2
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPIOIDUD
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#42CFRPart2
 * compose.inactive = true
 
 * compose.include[+].system = "http://snomed.info/sct"
@@ -687,7 +675,7 @@ Identified as: v3-ActCode#OPIOIDUD
 * expansion.contains[=].code = #F11.1 // "Opioid abuse"
 
 Instance: ShiftMinHallucinogenCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - SHIFT SLS Hallucinogen Codes"
 Description: """
@@ -706,12 +694,9 @@ SHIFT SLS set of codes representing hallucinogen abuse requiring special privacy
 
 Identified as: SUD
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#42CFRPart2
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#42CFRPart2
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 * compose.inactive = true
 
 * compose.include[+].system = "http://hl7.org/fhir/sid/icd-10-cm"
@@ -733,16 +718,16 @@ Title: "ValueSet - SHIFT SLS Sensitive Kind Codes"
 Description: "SHIFT SLS set of codes representing kinds of sensitive information requiring special privacy protections"
 * ^experimental = false
 * ^version = "0.1.0"
-* codes from valueset ShiftMinHallucinogenCodes
-* codes from valueset ShiftMinOpioidCodes
-* codes from valueset ShiftMinBHCodes
-* codes from valueset ShiftMinSEXCodes
-* codes from valueset ShiftMinAbortionCodes
-* codes from valueset ShiftMinSTDCodes
-* codes from valueset ShiftMinHIVCodes
-* codes from valueset ShiftMinGDISCodes
-* codes from valueset ShiftMinSDVCodes
-* codes from valueset ShiftMinPSYTHPNCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/ShiftMinHallucinogenCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/ShiftMinOpioidCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/ShiftMinBHCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/ShiftMinSEXCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/ShiftMinAbortionCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/ShiftMinSTDCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/ShiftMinHIVCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/ShiftMinGDISCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/ShiftMinSDVCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/ShiftMinPSYTHPNCodes
 
 
 

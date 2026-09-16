@@ -2,7 +2,7 @@
 // Generated from local directory: ../../synthea/src/main/resources/modules
 
 Instance: SyntheaAttentionDeficitDisorderVS
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Synthea Codes for attention_deficit_disorder"
 Description: "A ValueSet containing all clinical codes found in the sensitive Synthea module: attention_deficit_disorder."
@@ -14,8 +14,7 @@ Description: "A ValueSet containing all clinical codes found in the sensitive Sy
 * title = "Synthea Codes for attention_deficit_disorder"
 * description = "A ValueSet containing all clinical codes found in the sensitive Synthea module: attention_deficit_disorder."
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#PSY
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#PSY
 * compose.include[+].system = "http://snomed.info/sct"
 * compose.include[=].concept[+].code = #192127007 // "Child attention deficit disorder (disorder)"
 * compose.include[=].concept[+].code = #185347001 // "Encounter for problem (procedure)"
@@ -26,7 +25,7 @@ Description: "A ValueSet containing all clinical codes found in the sensitive Sy
 * compose.include[=].concept[+].code = #608139 // "atomoxetine 100 MG Oral Capsule"
 
 Instance: SyntheaCerebralPalsyVS
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Synthea Codes for cerebral_palsy"
 Description: "A ValueSet containing all clinical codes found in the sensitive Synthea module: cerebral_palsy."
@@ -38,8 +37,7 @@ Description: "A ValueSet containing all clinical codes found in the sensitive Sy
 * title = "Synthea Codes for cerebral_palsy"
 * description = "A ValueSet containing all clinical codes found in the sensitive Synthea module: cerebral_palsy."
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#DIS 
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#DIS 
 * compose.include[+].system = "http://snomed.info/sct"
 * compose.include[=].concept[+].code = #1259900009 // "Fitting of intraoral appliance (procedure)"
 * compose.include[=].concept[+].code = #128188000 // "Cerebral palsy (disorder)"
@@ -88,7 +86,7 @@ Description: "A ValueSet containing all clinical codes found in the sensitive Sy
 * compose.include[=].concept[+].code = #1190766 // "atropine sulfate 0.31 MG/ML Ophthalmic Solution (used Sublingual)"
 
 Instance: SyntheaCysticFibrosisVS
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Synthea Codes for cystic_fibrosis"
 Description: "A ValueSet containing all clinical codes found in the sensitive Synthea module: cystic_fibrosis.
@@ -102,8 +100,7 @@ v3-ActCode#GDIS"
 * title = "Synthea Codes for cystic_fibrosis"
 * description = "A ValueSet containing all clinical codes found in the sensitive Synthea module: cystic_fibrosis.\n\nv3-ActCode#GDIS"
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#GDIS
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#GDIS
 * compose.include[+].system = "http://snomed.info/sct"
 * compose.include[=].concept[+].code = #190905008 // "Cystic fibrosis (disorder)"
 * compose.include[=].concept[+].code = #67799006 // "Cystic fibrosis, prenatal detection (procedure)"
@@ -142,7 +139,7 @@ v3-ActCode#GDIS"
 * compose.include[=].concept[+].code = #313572 // "Vancomycin 50 MG/ML Injectable Solution"
 
 Instance: SyntheaDementiaVS
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Synthea Codes for dementia"
 Description: "A ValueSet containing all clinical codes found in the sensitive Synthea module: dementia.
@@ -156,8 +153,7 @@ v3-ActCode#COGN"
 * title = "Synthea Codes for dementia"
 * description = "A ValueSet containing all clinical codes found in the sensitive Synthea module: dementia.\n\nv3-ActCode#COGN"
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#COGN
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#COGN
 * compose.include[+].system = "http://snomed.info/sct"
 * compose.include[=].concept[+].code = #26929004 // "Alzheimer's disease (disorder)"
 * compose.include[=].concept[+].code = #230265002 // "Familial Alzheimer's disease of early onset (disorder)"
@@ -176,7 +172,7 @@ v3-ActCode#COGN"
 * compose.include[=].concept[+].code = #1100184 // "Donepezil hydrochloride 23 MG Oral Tablet"
 
 Instance: SyntheaOpioidAddictionVS
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Synthea Codes for opioid_addiction"
 Description: "A ValueSet containing all clinical codes found in the sensitive Synthea module: opioid_addiction.
@@ -190,8 +186,7 @@ v3-ActCode#OPIOIDUD"
 * title = "Synthea Codes for opioid_addiction"
 * description = "A ValueSet containing all clinical codes found in the sensitive Synthea module: opioid_addiction.\n\nv3-ActCode#OPIOIDUD"
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPIOIDUD 
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPIOIDUD 
 * compose.include[+].system = "http://snomed.info/sct"
 * compose.include[=].concept[+].code = #196416002 // "Impacted molars (disorder)"
 * compose.include[=].concept[+].code = #50849002 // "Emergency room admission (procedure)"
@@ -213,7 +208,7 @@ v3-ActCode#OPIOIDUD"
 * compose.include[=].concept[+].code = #1049221 // "Acetaminophen 325 MG / Oxycodone Hydrochloride 5 MG Oral Tablet"
 
 Instance: SyntheaPregnancyVS
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Synthea Codes for pregnancy"
 Description: "A ValueSet containing all clinical codes found in the sensitive Synthea module: pregnancy.
@@ -227,8 +222,7 @@ v3-ActCode#PREGNANT"
 * title = "Synthea Codes for pregnancy"
 * description = "A ValueSet containing all clinical codes found in the sensitive Synthea module: pregnancy.\n\nv3-ActCode#PREGNANT"
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#PREGNANT
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#PREGNANT
 * compose.include[+].system = "http://snomed.info/sct"
 * compose.include[=].concept[+].code = #72892002 // "Normal pregnancy (finding)"
 * compose.include[=].concept[+].code = #424441002 // "Prenatal initial visit (regime/therapy)"
@@ -296,7 +290,7 @@ v3-ActCode#PREGNANT"
 * compose.include[=].concept[+].code = #161744009 // "Past pregnancy history of miscarriage (situation)"
 
 Instance: SyntheaSelfHarmVS
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Synthea Codes for self_harm"
 Description: "A ValueSet containing all clinical codes found in the sensitive Synthea module: self_harm.
@@ -310,8 +304,7 @@ v3-ActCode#SDV"
 * title = "Synthea Codes for self_harm"
 * description = "A ValueSet containing all clinical codes found in the sensitive Synthea module: self_harm.\n\nv3-ActCode#SDV"
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SDV
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SDV
 * compose.include[+].system = "http://snomed.info/sct"
 * compose.include[=].concept[+].code = #86849004 // "Suicidal poisoning (disorder)"
 * compose.include[=].concept[+].code = #287185009 // "Attempted suicide by cutting or stabbing"
@@ -328,7 +321,7 @@ v3-ActCode#SDV"
 * compose.include[=].concept[+].code = #29240004 // "Autopsy examination (procedure)"
 
 Instance: SyntheaSpinaBifidaVS
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Synthea Codes for spina_bifida"
 Description: "A ValueSet containing all clinical codes found in the sensitive Synthea module: spina_bifida.
@@ -342,8 +335,7 @@ v3-ActCode#GDIS"
 * title = "Synthea Codes for spina_bifida"
 * description = "A ValueSet containing all clinical codes found in the sensitive Synthea module: spina_bifida.\n\nv3-ActCode#GDIS"
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#GDIS
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#GDIS
 * compose.include[+].system = "http://snomed.info/sct"
 * compose.include[=].concept[+].code = #414667000 // "Meningomyelocele (disorder)"
 * compose.include[=].concept[+].code = #171131006 // "Meningocele (disorder)"
@@ -375,7 +367,7 @@ v3-ActCode#GDIS"
 // --- MASTER SENSITIVE VALUE SETS ---
 
 Instance: SyntheaSubstanceAbuseVS
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Synthea Substance Abuse Codes"
 Description: "A comprehensive ValueSet encompassing codes from all Synthea modules related to Opioid Addiction, OUD treatment, and chronic pain prescribing.
@@ -389,12 +381,11 @@ v3-ActCode#SUD"
 * title = "Synthea Substance Abuse Codes"
 * description = "A comprehensive ValueSet encompassing codes from all Synthea modules related to Opioid Addiction, OUD treatment, and chronic pain prescribing.\n\nv3-ActCode#SUD"
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
 * compose.include[+].valueSet = "http://johnmoehrke.github.io/SLSValueSets/ValueSet/SyntheaOpioidAddictionVS"
 
 Instance: SyntheaGeneticVS
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Synthea Genetic Disability Codes"
 Description: "A comprehensive ValueSet encompassing codes from all Synthea modules related to genetic diseases.
@@ -408,12 +399,11 @@ v3-ActCode#GDIS"
 * title = "Synthea Genetic Disability Codes"
 * description = "A comprehensive ValueSet encompassing codes from all Synthea modules related to genetic diseases.\n\nv3-ActCode#GDIS"
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#GDIS
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#GDIS
 * compose.include[+].valueSet = "http://johnmoehrke.github.io/SLSValueSets/ValueSet/SyntheaCysticFibrosisVS"
 
 Instance: SyntheaMentalBehavioralHealthVS
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Synthea Mental and Behavioral Health Codes"
 Description: "A comprehensive ValueSet encompassing codes from all Synthea modules related to mental health conditions, including ADD, PTSD, and self-harm events.
@@ -427,13 +417,12 @@ v3-ActCode#BH"
 * title = "Synthea Mental and Behavioral Health Codes"
 * description = "A comprehensive ValueSet encompassing codes from all Synthea modules related to mental health conditions, including ADD, PTSD, and self-harm events.\n\nv3-ActCode#BH"
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 * compose.include[+].valueSet = "http://johnmoehrke.github.io/SLSValueSets/ValueSet/SyntheaAttentionDeficitDisorderVS"
 * compose.include[+].valueSet = "http://johnmoehrke.github.io/SLSValueSets/ValueSet/SyntheaSelfHarmVS"    
 
 Instance: SyntheaReproductiveHealthVS
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Synthea Reproductive Health Codes"
 Description: "A comprehensive ValueSet encompassing codes from all Synthea modules related to reproductive health, including pregnancy, contraception, and sexual activity.
@@ -447,12 +436,11 @@ v3-ActCode#SEX"
 * title = "Synthea Reproductive Health Codes"
 * description = "A comprehensive ValueSet encompassing codes from all Synthea modules related to reproductive health, including pregnancy, contraception, and sexual activity.\n\nv3-ActCode#SEX"
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SEX
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SEX
 * compose.include[+].valueSet = "http://johnmoehrke.github.io/SLSValueSets/ValueSet/SyntheaPregnancyVS"
 
 Instance: SyntheaCognitiveVS
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Synthea Cognitive Disability Codes"
 Description: "A comprehensive ValueSet encompassing codes from all Synthea modules related to cognitive and neurological disabilities.
@@ -466,8 +454,7 @@ v3-ActCode#COGN"
 * title = "Synthea Cognitive Disability Codes"
 * description = "A comprehensive ValueSet encompassing codes from all Synthea modules related to cognitive and neurological disabilities.\n\nv3-ActCode#COGN"
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#COGN
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#COGN
 * compose.include[+].valueSet = "http://johnmoehrke.github.io/SLSValueSets/ValueSet/SyntheaCerebralPalsyVS"
 * compose.include[+].valueSet = "http://johnmoehrke.github.io/SLSValueSets/ValueSet/SyntheaDementiaVS"
 * compose.include[+].valueSet = "http://johnmoehrke.github.io/SLSValueSets/ValueSet/SyntheaSpinaBifidaVS"

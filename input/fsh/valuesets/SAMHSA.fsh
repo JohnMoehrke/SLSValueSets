@@ -72,7 +72,7 @@ Usage: #definition
 
 
 Instance: SamhsaSensitivePSY
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "clinical codes that indicate PSY"
 Description: """
@@ -98,8 +98,7 @@ PSY - psychiatry disorder information sensitivity
 * version = "0.1.0"
 * date = "2016-09-09" // based on vsac publication date
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#PSY
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#PSY
 // SAMHSA C2S Mental Health Disorders
 * compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.32" // ICD10CM
 * compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.33" // ICD9CM
@@ -110,7 +109,7 @@ PSY - psychiatry disorder information sensitivity
 
 
 Instance: SamhsaSensitiveETH
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "clinical codes that indicate ETH"
 Description: """
@@ -178,8 +177,7 @@ ETH - substance abuse information sensitivity (alcohol or drug-abuse information
 * experimental = false
 * version = "0.1.0"
 * date = "2016-09-09" // based on vsac publication date
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#ETH
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#ETH
 * compose.inactive = true
 // SAMHSA  C2S Alcohol Use Disorders
 * compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.1" // SNOMEDCD
@@ -237,7 +235,7 @@ ETH - substance abuse information sensitivity (alcohol or drug-abuse information
 
 
 Instance: SamhsaSensitiveETHUD
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "clinical codes that indicate ETHUD"
 Description: """
@@ -261,8 +259,7 @@ ETHUD - alcohol abuse information sensitivity (alcohol abuse information)
 * experimental = false
 * version = "0.1.0"
 * date = "2016-09-09" // based on vsac publication date
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#ETHUD 
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#ETHUD 
 * compose.inactive = true
 // SAMHSA  C2S Alcohol Use Disorders
 * compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.1" // SNOMEDCD
@@ -277,7 +274,7 @@ ETHUD - alcohol abuse information sensitivity (alcohol abuse information)
 
 
 Instance: SamhsaSensitiveOPIOIDUD
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "clinical codes that indicate OPIOIDUD"
 Description: """
@@ -337,8 +334,7 @@ OPIOIDUD - Opioid substance abuse information sensitivity (drug-abuse informatio
 * experimental = false
 * version = "0.1.0"
 * date = "2016-09-09" // based on vsac publication date
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPIOIDUD
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPIOIDUD
 * compose.inactive = true
 // SAMHSA C2S Amphetamine Use Disorders
 * compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.10" // RXNORM
@@ -389,7 +385,7 @@ OPIOIDUD - Opioid substance abuse information sensitivity (drug-abuse informatio
 
 
 Instance: SamhsaSensitiveSDV
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "clinical codes that indicate SDV"
 Description: """
@@ -408,8 +404,7 @@ SDV - Sexual assault, abuse or domestic violence
 * experimental = false
 * version = "0.1.0"
 * date = "2016-09-09" // based on vsac publication date
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SDV
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SDV
 * compose.inactive = true
 // SAMHSA C2S Sexuality and reproductive health information sensitivity
 * compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.49" // ICD9CM
@@ -418,7 +413,7 @@ SDV - Sexual assault, abuse or domestic violence
 
 
 Instance: SamhsaSensitiveHIV
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "clinical codes that indicate HIV"
 Description: """
@@ -441,8 +436,7 @@ HIV/AIDS information
 * experimental = false
 * version = "0.1.0"
 * date = "2016-09-09" // based on vsac publication date
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#HIV
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#HIV
 * compose.inactive = true
 // SAMHSA C2S HIV/AIDS Information
 * compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.23" // HCPCS
@@ -457,7 +451,7 @@ HIV/AIDS information
 
 
 Instance: SamhsaSensitiveETHJustRx
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "clinical codes that indicate ETH medications"
 Description: """
@@ -473,8 +467,7 @@ These valueSets are `not maintained`, the codes in these valueSets are inactive/
 * experimental = false
 * version = "0.1.0"
 * date = "2016-09-09" // based on vsac publication date
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#ETH 
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#ETH 
 * compose.inactive = true
 // SAMHSA C2S Amphetamine Use Disorders
 * compose.include[+].valueSet = "http://cts.nlm.nih.gov/fhir/ValueSet/2.16.840.1.113762.1.4.1142.10" // RXNORM

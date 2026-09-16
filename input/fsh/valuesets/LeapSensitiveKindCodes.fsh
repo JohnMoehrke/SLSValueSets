@@ -4,7 +4,7 @@
 // BEHAVIORAL HEALTH (BH) CODES
 //------------------------------------------------------------------------------
 Instance: LeapSlsBehavioralHealthCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - Leap SLS Behavioral Health Codes"
 Description: """
@@ -23,8 +23,7 @@ Leap SLS set of codes representing behavioral health conditions requiring specia
 
 Identified as: v3-ActCode#BH
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 
 * compose.inactive = true
 
@@ -90,7 +89,7 @@ Identified as: v3-ActCode#BH
 // SEXUALITY & REPRODUCTIVE HEALTH (SEX) CODES
 //------------------------------------------------------------------------------
 Instance: LeapSlsSexualityAndReproductiveHealthCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - Leap SLS Sexuality and Reproductive Health Codes"
 Description: """
@@ -109,8 +108,7 @@ Leap SLS set of codes representing sexuality and reproductive health requiring s
 
 Identified as: v3-ActCode#SEX
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SEX
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SEX
 
 * compose.inactive = true
 
@@ -129,7 +127,7 @@ Identified as: v3-ActCode#SEX
 // as it does not matter where these codes show up they would indicate the sensitivity kind SUD
 //------------------------------------------------------------------------------
 Instance: LeapSlsPsychiatricNotesCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - Leap SLS Psychiatric Notes Use Codes"
 Description: """
@@ -148,10 +146,8 @@ Leap SLS set of codes representing psychiatric notes requiring special privacy p
 
 Identified as: PSYTHPN, BH
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#PSYTHPN
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#PSYTHPN
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 
 * compose.inactive = true
 
@@ -165,7 +161,7 @@ Identified as: PSYTHPN, BH
 
 
 Instance: LeapSlsOpioidCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - Leap SLS Opioid Codes"
 Description: """
@@ -184,12 +180,9 @@ Leap SLS set of codes representing opioid abuse requiring special privacy protec
 
 Identified as: v3-ActCode#OPIOIDUD
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPIOIDUD
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#42CFRPart2
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#OPIOIDUD
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#42CFRPart2
 * compose.inactive = true
 
 * compose.include[+].system = "http://snomed.info/sct"
@@ -249,7 +242,7 @@ Identified as: v3-ActCode#OPIOIDUD
 * expansion.contains[=].code = #F11.1 // "Opioid abuse"
 
 Instance: LeapSlsHallucinogenCodes
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "ValueSet - Leap SLS Hallucinogen Codes"
 Description: """
@@ -268,12 +261,9 @@ Leap SLS set of codes representing hallucinogen abuse requiring special privacy 
 
 Identified as: SUD
 """
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#42CFRPart2
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#SUD
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#42CFRPart2
+* useContext[SLS-tag][+].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-ActCode#BH
 * compose.inactive = true
 
 * compose.include[+].system = "http://hl7.org/fhir/sid/icd-10-cm"
@@ -294,11 +284,11 @@ Title: "ValueSet - Leap SLS Sensitive Kind Codes"
 Description: "Leap SLS set of codes representing kinds of sensitive information requiring special privacy protections"
 * ^experimental = false
 * ^version = "0.1.0"
-* codes from valueset LeapSlsHallucinogenCodes
-* codes from valueset LeapSlsOpioidCodes
-* codes from valueset LeapSlsBehavioralHealthCodes
-* codes from valueset LeapSlsSexualityAndReproductiveHealthCodes
-* codes from valueset LeapSlsPsychiatricNotesCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/LeapSlsOpioidCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/LeapSlsHallucinogenCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/LeapSlsBehavioralHealthCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/LeapSlsSexualityAndReproductiveHealthCodes
+* codes from valueset http://johnmoehrke.github.io/SLSValueSets/ValueSet/LeapSlsPsychiatricNotesCodes
 
 
 

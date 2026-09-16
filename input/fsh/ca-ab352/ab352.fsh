@@ -308,7 +308,7 @@ Description: "A FHIR Bundle containing all ValueSets related to AB352 sensitive 
 * entry[=].fullUrl = "http://example.org/ValueSet/AB352ContraceptionTopicsAi"
 
 Instance: AB352AbortionTopicsHealthNet
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Abortion-Related Health Topics (Health Net California)"
 Description: """
@@ -370,8 +370,7 @@ According to the site's AB 352 guidance, Health Net recommends that IT and Billi
 
 **Note:** This list may not be all-inclusive and is subject to change."""
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = AB352HealthSensitivityCs#ABORTION
+* useContext[SLS-tag][+].valueCodeableConcept = AB352HealthSensitivityCs#ABORTION
 // ------------------------------------------------------------
 // ICD-10-CM — Abortion-related diagnoses (Health Net CA)
 // ------------------------------------------------------------
@@ -466,7 +465,7 @@ According to the site's AB 352 guidance, Health Net recommends that IT and Billi
 
 
 Instance: AB352GenderAffirmingCareHealthNet
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Usage: #definition
 Title: "Gender-Affirming Care Codes (Health Net California)"
 Description: """
@@ -513,8 +512,7 @@ Health Net's [bulletin 24-351](https://providerlibrary.healthnetcalifornia.com/)
 """
 * url = "http://johnmoehrke.github.io/SLSValueSets/ValueSet/AB352GenderAffirmingCareHealthNet"
 * compose.inactive = true
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = AB352HealthSensitivityCs#GENDER_AFFIRMING_CARE
+* useContext[SLS-tag][+].valueCodeableConcept = AB352HealthSensitivityCs#GENDER_AFFIRMING_CARE
 // ------------------------------------------------------------
 // CPT CODES (from Health Net “Coding Implications” section)
 // ------------------------------------------------------------
@@ -660,7 +658,7 @@ Health Net's [bulletin 24-351](https://providerlibrary.healthnetcalifornia.com/)
 
 
 Instance: AB352ContraceptionTopicsAi
-InstanceOf: ValueSet
+InstanceOf: SlsValueSet
 Title: "Contraception-Related Health Topics"
 Description: """
 Clinical concepts related to contraception drawn from LOINC, SNOMED CT, and ICD-10-CM.
@@ -678,8 +676,7 @@ Usage: #definition
 * compose.inactive = true
 * version = "0.1.0"
 * date = "2026-01-23T00:00:00Z"
-* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#focus
-* useContext[=].valueCodeableConcept = AB352HealthSensitivityCs#CONTRACEPTION
+* useContext[SLS-tag][+].valueCodeableConcept = AB352HealthSensitivityCs#CONTRACEPTION
 * title = "Contraception-Related Health Topics"
 * name = "AB352ContraceptionTopicsAi"
 * description = """
